@@ -3,6 +3,8 @@
 
 $primaryColor : #FF00F7;
 $secondaryColor : #FF0057;
+$primaryGradient: linear-gradient(to Left,$primaryColor, $secondaryColor);
+
 $white: white;
 $black: rgb(29, 29, 29);
 $lightGray: rgb(199, 199, 199);

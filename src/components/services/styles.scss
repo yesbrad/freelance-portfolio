@@ -1,0 +1,8 @@
+@import '../../styles/config.scss';
+
+.services-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: $spacing1;
+	box-sizing: border-box;
+}
