@@ -4,6 +4,7 @@
 $primaryColor : #FF00F7;
 $secondaryColor : #FF0057;
 $primaryGradient: linear-gradient(to Left,$primaryColor, $secondaryColor);
+$primaryGradientUp: linear-gradient($primaryColor, $secondaryColor);
 
 $white: white;
 $black: rgb(29, 29, 29);
@@ -15,6 +16,7 @@ $mobileSize : 1000px;
 $tabletSize : 1300px;
 
 $spacing1: 1rem;
+$spacing2: 2rem;
 $borderRadius1: 2rem;
 
 // PRESETS

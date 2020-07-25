@@ -9,19 +9,20 @@ const ServicesCard = ({ serviceInfo }) => {
 	const reveal = useReveal(ref);
 
 	const renderSuits = suits.map((data) => (
-		<div className="services-card-suit">
+		<div key={data} className="services-card-suit">
 			<span>{data}</span>
 		</div>
-	))
-	
+	))	
+
 	const spring = useSpring({
-		transform: reveal ? 'translateY(0)' : 'translateY(40px)',
-		config: {...config.wobbly, tension: 300, friction: 7}
+		transform: reveal ? 'translateY(0) rotate(0)' : 'translateY(40px) rotate(5deg)',
+		opacity: reveal ? 1 : 0,
+		config: { tension: 300, friction: 15}
 	});
 
 	return (
-		<div ref={ref} className="services-card-container">
-			<animated.div style={spring} className="services-card-content">
+		<div ref={ref} key={title} className="services-card-container">
+			<animated.div key={title} style={spring} className="services-card-content">
 				<h2>{title}</h2>
 				<div className="services-card-suit-container">
 					{renderSuits}

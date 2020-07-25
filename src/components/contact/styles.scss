@@ -1,0 +1,117 @@
+@import '../../styles/config.scss';
+
+.contact-container {
+	padding: $spacing2;
+	box-sizing: border-box;
+
+	
+	.contact-content {
+		background-color: $black;
+		border-radius: $borderRadius1;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		overflow: hidden;
+
+		.contact-col-image {
+			background: url('https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+			padding: 5rem;
+			display: flex;
+			justify-content: flex-end;
+
+			h1 {
+				background: $primaryGradientUp;
+				width: 20rem;
+				padding: 3rem;
+				color: white;
+				font-size: 7rem;
+				font-weight: 900;
+				border-radius: 1rem;
+			}
+		}
+
+		.contact-col {
+			display: grid;
+			place-items: center;
+			padding: 5rem;
+
+			div {
+				// @include DBorder;
+				width: 70%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				
+				h2 {
+					color: $white;
+					font-size: 1.3rem;
+					font-weight: 200;
+					margin-bottom: 1rem;
+				}
+
+				input {
+					outline: 0;
+					border: none;
+					margin-bottom: 1.3rem;
+					width: 100%;
+					padding: 1rem;
+					box-sizing: border-box;
+					border-radius: $borderRadius1;
+
+					&:focus {
+						border-bottom: 4px solid $primaryColor;
+					}
+				}
+
+				input[type=submit] {
+					background: $secondaryColor;
+					color: white;
+					font-size: 1rem;
+					transition: transform 100ms ease-in-out;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+
+				textarea {
+					font-family: 'roboto';
+					padding: 1rem;
+					box-sizing: border-box;
+					border: none;
+					width: 100%;
+					border-radius: $borderRadius1;
+					margin-bottom: 2rem;
+
+					&:focus {
+						border-bottom: 4px solid $primaryColor;
+					}
+				}
+
+				h3 {
+					width: 100%;
+					text-align: center;
+					color: white;
+					margin: 2rem 0;
+					font-weight: 200;
+				}
+
+				.contact-socials {
+					color: white;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					width: 100%;
+
+					button {
+						.contact-icon {
+							color: white;
+							width: 3rem;
+							height: 3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
