@@ -3,7 +3,7 @@ import './styles.scss';
 import { animated, useSpring, config } from 'react-spring';
 import { useReveal } from '../../hooks';
 
-const ServicesCard = ({ serviceInfo }) => {
+const ServicesCard = ({ serviceInfo, style }) => {
 	const { title, suits, image, description } = serviceInfo;
 	const ref = useRef();
 	const reveal = useReveal(ref);
@@ -22,7 +22,7 @@ const ServicesCard = ({ serviceInfo }) => {
 
 	return (
 		<div ref={ref} key={title} className="services-card-container">
-			<animated.div key={title} style={spring} className="services-card-content">
+			<animated.div key={title} style={style} className="services-card-content">
 				<h2>{title}</h2>
 				<div className="services-card-suit-container">
 					{renderSuits}

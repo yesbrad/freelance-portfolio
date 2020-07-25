@@ -10,7 +10,8 @@ const Contact = () => {
 
 	const spring = useSpring({
 		opacity: vis ? 1 : 0,
-		transform: vis ? 'scale(1) translateY(0)' : 'scale(0.95) translateY(300px)',
+		transform: vis ? 'scale(1) rotateX(0)' : 'scale(0.95) rotateX(50deg)',
+		config: { ...config.slow}
 	})
 
 	return (

@@ -5,7 +5,9 @@ export const useReveal = (ref) => {
 
 	const handleScroll = () => {
 		const posOn = (window.innerHeight - window.innerHeight / 3 > ref.current.getBoundingClientRect().y);
-		setPos(posOn);
+		
+		// if (posOn) 
+			setPos(posOn);
 	};
 	
 	useEffect(() => {
