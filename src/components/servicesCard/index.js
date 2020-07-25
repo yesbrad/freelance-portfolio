@@ -14,11 +14,13 @@ const ServicesCard = ({ serviceInfo }) => {
 		<div className="services-card-container">
 			<div className="services-card-content">
 				<h2>{title}</h2>
-				<div className="services-card-suit">
+				<div className="services-card-suit-container">
 					{renderSuits}
 				</div>
 				<div className="services-card-description">
-					{description}
+					<span>
+						{description}
+					</span>
 				</div>
 			</div>
 		</div>
