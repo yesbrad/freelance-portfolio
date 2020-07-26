@@ -19,6 +19,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	
+}
+
+body {
+	overflow-x: hidden !important;
 }
 
 button {
