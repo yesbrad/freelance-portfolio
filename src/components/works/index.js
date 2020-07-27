@@ -36,6 +36,10 @@ const Works = () => {
 		clearInterval(interval);
 	}
 
+	const revealSpring = useSpring({
+		opacity: reveal ? 1 : 0
+	})
+
 	const springs = useTransition(currentIndex, item => item, {
 		from: { transform: `translateX(-${window.innerWidth}px)` },
 		enter: { transform: `translateX(0)` },
@@ -43,7 +47,7 @@ const Works = () => {
 	})	
 
 	return (
-		<div ref={ref} style={{ height: refHeight.current ? `${refHeight.current.offsetHeight}px` : 0 }} className="works-container">
+		<animated.div ref={ref} style={{ ...revealSpring, height: refHeight.current ? `${refHeight.current.offsetHeight}px` : 0 }} className="works-container">
 			{springs.map(({item, props, key}) => (
 				<animated.div ref={refHeight} key={key} style={props} className="works-card-container">
 					<div className="works-card-content">
@@ -62,7 +66,7 @@ const Works = () => {
 					</div>
 				</animated.div>
 			))}
-		</div>
+		</animated.div>
 	)
 }
 
