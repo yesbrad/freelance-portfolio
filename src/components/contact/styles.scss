@@ -47,13 +47,13 @@
 		.contact-col {
 			display: grid;
 			place-items: center;
-			padding: 5rem;
+			padding: 4rem;
 
 			@media screen and (max-width: $tabletSize) {
 				padding: 2rem;
 			}
 
-			div {
+			form {
 				width: 70%;
 				display: flex;
 				flex-direction: column;
@@ -80,9 +80,11 @@
 					padding: 1rem;
 					box-sizing: border-box;
 					border-radius: $borderRadius1;
+					background-color: $darkGray;
+					transition: background-color 150ms ease-in-out;
 
 					&:focus {
-						outline: 4px solid $primaryColor;
+						background-color: $white;
 					}
 				}
 
@@ -106,9 +108,12 @@
 					width: 100%;
 					border-radius: $borderRadius1;
 					margin-bottom: 2rem;
+					background-color: $darkGray;
+					transition: background-color 150ms ease-in-out;
 
 					&:focus {
-						border-bottom: 4px solid $primaryColor;
+						background-color: $white;
+						outline: 0;
 					}
 				}
 
@@ -118,6 +123,40 @@
 					color: white;
 					margin: 2rem 0;
 					font-weight: 200;
+				}
+
+				.contact-errors {
+					background: white;
+					width: 100%;
+					padding: 1rem;
+					box-sizing: border-box;
+					display: flex;
+					flex-direction: column;
+					border-radius: 1rem;
+					span {
+						color: red;
+						margin: 0.5rem 0;
+					}
+				}
+
+				.contact-phone {
+					width: 100%;
+					color: white;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+
+					.contact-phone-icon {
+						width: 3rem;
+						height: 3rem;
+					}
+
+					h4 {
+						margin-left: 1rem;
+						font-size: 2rem;
+						font-weight: 700;
+					}
 				}
 
 				.contact-socials {
@@ -130,8 +169,8 @@
 					button {
 						.contact-icon {
 							color: white;
-							width: 3rem;
-							height: 3rem;
+							width: 2rem;
+							height: 2rem;
 							transition: transform 100ms ease-in-out;
 							
 							&:hover {
