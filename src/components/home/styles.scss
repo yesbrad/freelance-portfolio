@@ -32,6 +32,10 @@
 			font-size: 7rem;
 			text-align: right;
 			font-weight: 700;
+
+			@media screen and (max-width: $tabletSize) {
+				visibility: hidden;
+			}
 		}
 
 		.home-content-action-buttons {
@@ -42,6 +46,10 @@
 				width: 10rem;
 				margin: 0 1rem 0 0;
 			}
+
+			#home-content-removed {
+				visibility: hidden;
+			}
 		}
 
 		nav {
@@ -49,6 +57,10 @@
 			justify-content: flex-end;
 			align-items: flex-start;
 			
+			@media screen and (max-width: $tabletSize) {
+				visibility: hidden;
+			}
+
 			.home-content-nav-container {
 				// @include DBorder;
 				width: 70%;

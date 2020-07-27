@@ -5,4 +5,9 @@
 	grid-template-columns: repeat(3, 1fr);
 	padding: $spacing1;
 	box-sizing: border-box;
+
+	@media screen and (max-width: $tabletSize) {
+		padding: 2rem;
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

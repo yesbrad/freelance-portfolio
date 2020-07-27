@@ -3,7 +3,7 @@ import './styles.scss';
 
 const Title = ({ title }) => {
 	return (
-		<div className="title-main-containerzzz">
+		<div className="title-main-container">
 			<span>{title}</span>
 		</div>
 	)

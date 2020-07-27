@@ -6,9 +6,21 @@
 	padding: $spacing2;
 	box-sizing: border-box;
 
+	@media screen and (max-width: $smallSize) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (max-width: $tabletSize) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	.about-info {
 		padding: 6rem;
 		box-sizing: border-box;
+
+		@media screen and (max-width: $tabletSize) {
+			padding: 3rem;
+		}
 
 		h1 {
 			font-size: 4rem;
@@ -28,6 +40,10 @@
 	}
 
 	.about-image {
+		@media screen and (max-width: $tabletSize) {
+			display: none;
+		}
+
 		grid-column-start: 2;
 		grid-column-end: 4;
 		border-radius: $borderRadius1;

@@ -51,7 +51,7 @@ const Works = () => {
 			{springs.map(({item, props, key}) => (
 				<animated.div ref={refHeight} key={key} style={props} className="works-card-container">
 					<div className="works-card-content">
-						<div className="works-image"></div>
+						<div className="works-image"><div></div></div>
 						<div className="works-info">
 							<div className="works-info-content">
 								<h1>{data[item]}</h1>

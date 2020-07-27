@@ -21,9 +21,9 @@ const Home = () => {
 					</nav>
 					<div className="home-content-action-buttons">
 						<div className="home-content-button">
-							<Button title="Get a Quote" />
+							<Button title="Get a Quote" isNav/>
 						</div>
-						<div className="home-content-button">
+						<div className="home-content-button" id="home-content-removed">
 							<Button title="Services" />
 						</div>
 					</div>

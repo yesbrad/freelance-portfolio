@@ -15,18 +15,30 @@
 			grid-template-columns: repeat(2, 1fr);
 			background: $lightGray2;
 
+			@media screen and (max-width: $tabletSize) {
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+			}
+
 			.works-info {
 				padding: 7rem;
 				box-sizing: border-box;
 				overflow: hidden;
 				
+				@media screen and (max-width: $tabletSize) {
+					padding: 2rem;
+				}
+
 				.works-info-content {
 					display: flex;
 					flex-direction: column;
-					// background: $white;
 					padding: 1rem 4rem;
 					border-radius: $borderRadius1;
 					
+					@media screen and (max-width: $smallSize) {
+						padding: 1rem 0rem;
+					}
+
 					h1 {
 						font-size: 4rem;
 						font-weight: 800;
@@ -37,7 +49,6 @@
 					}
 					
 					span {
-						// @include DBorder;
 						font-size: 1rem;
 						line-height: 2rem;
 						font-weight: 300;
@@ -78,14 +89,23 @@
 			}
 			
 			.works-image {
-				// position: absolute;
-				border-radius: $borderRadius1;
 				width: 100%;
 				height: 100%;
-				background: url('https://images.unsplash.com/photo-1525913040040-dc99b1be1c86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-				background-position: center;
-				background-size: cover;
-				z-index: 10;
+
+				@media screen and (max-width: $tabletSize) {
+					padding: 2rem;
+					box-sizing: border-box;
+				}
+
+				div {
+					border-radius: $borderRadius1;
+					width: 100%;
+					height: 100%;
+					background: url('https://images.unsplash.com/photo-1525913040040-dc99b1be1c86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+					background-position: center;
+					background-size: cover;
+					z-index: 10;
+				}
 			}
 		}
 	}

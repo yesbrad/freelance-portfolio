@@ -1,6 +1,5 @@
 @import '../../styles/config.scss';
 
-
 .button-generic-container {
 	background: linear-gradient(to Left,$primaryColor, $secondaryColor);
 	height: 3rem;
@@ -9,6 +8,10 @@
 	color: white;
 	box-shadow: 0 0.5rem 3rem 0 rgba(0,0,0,0.3);
 	transition: all 0.2s ease-in-out;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .button-generic-container:hover {
