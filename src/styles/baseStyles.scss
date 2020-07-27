@@ -1,3 +1,7 @@
+@import '../styles/config.scss';
+
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,4 +64,28 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@media screen and (min-width: $smallSize) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: $smallSize) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: $tabletSize) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: $mobileSize) {
+	html {
+		font-size: 10px;
+	}
 }
