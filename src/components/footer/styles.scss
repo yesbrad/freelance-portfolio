@@ -1,0 +1,52 @@
+@import '../../styles/config.scss';
+
+.footer-container {
+	padding: $spacing2;
+	box-sizing: border-box;
+	padding-bottom: 0;
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		background: $primaryGradient;
+		padding: 7rem 5rem;
+		box-sizing: border-box;
+		color: white;
+		border-top-left-radius: $borderRadius1;
+		border-top-right-radius: $borderRadius1;
+
+		h4 {
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+
+		.footer-links {
+
+
+			span {
+				font-size: 0.7rem;
+			}
+		}
+
+		.footer-socials {
+			display: flex;
+			justify-content: flex-end;
+
+			.footer-socials-content {
+
+				
+				button {
+					color: white;
+					width: 5rem;
+					height: 5rem;
+					
+					.footer-icon {
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
