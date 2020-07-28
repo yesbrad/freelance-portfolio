@@ -3,17 +3,7 @@ import './styles.scss';
 import { animated, useSpring, useSprings, useTransition } from 'react-spring';
 import { useReveal } from '../../hooks';
 import Button from '../button';
-
-let data = [
-	'yeet1',
-	'yeet2',
-	'yeet3',
-	'yeet4',
-	'yeet5',
-	'yeet6',
-	'yeet7',
-	'yeet8',
-]
+import WorksData from '../../data/works';
 
 let interval;
 
@@ -25,7 +15,7 @@ const Works = () => {
 
 	useEffect(() => {
 		interval = setInterval(() => {
-			SetCurrentIndex(cur => (cur + 1) % 8);
+			SetCurrentIndex(cur => (cur + 1) % WorksData.length);
 		}, 5000)
 
 		return () => clearInterval(interval);
@@ -51,15 +41,15 @@ const Works = () => {
 			{springs.map(({item, props, key}) => (
 				<animated.div ref={refHeight} key={key} style={props} className="works-card-container">
 					<div className="works-card-content">
-						<div className="works-image"><div></div></div>
+						<div className="works-image"><div style={{background: `url(${WorksData[item].image})`, backgroundPosition: 'center', backgroundSize: 'cover'}}></div></div>
 						<div className="works-info">
 							<div className="works-info-content">
-								<h1>{data[item]}</h1>
-								<span className="works-info-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, doloremque? Quae sapiente veniam amet nam! Temporibus molestias explicabo illum cupiditate distinctio, quaerat voluptas repellat mollitia, omnis consequuntur nulla culpa ducimus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, doloremque? Quae sapiente veniam amet nam! Temporibus molestias explicabo illum cupiditate distinctio, quaerat voluptas repellat mollitia, omnis consequuntur nulla culpa ducimus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, doloremque? Quae sapiente veniam amet nam! Temporibus molestias explicabo illum cupiditate distinctio, quaerat voluptas repellat mollitia, omnis consequuntur nulla culpa ducimus?</span>
-								<span className="works-info-test">"Here lies a testimonial. Lorem ipsum dolor sit amet." - John Smith</span>
-								<Button title="View Site" />
+								<h1>{WorksData[item].title}</h1>
+								<span className="works-info-about">{WorksData[item].description}</span>
+								{WorksData[item].testimonial && <span className="works-info-test">{WorksData[item].testimonial}</span>}
+								<Button title="View Site" onClick={() => window.open(WorksData[item].url)}/>
 								<div className="works-pagnation">
-									{data.map((d, i) => <button onClick={() => stopAutoScroll(i)} id={i === currentIndex ? "works-pagnation-dot" : ''}></button>)}
+									{WorksData.map((d, i) => <button onClick={() => stopAutoScroll(i)} id={i === currentIndex ? "works-pagnation-dot" : ''}></button>)}
 								</div>
 							</div>
 						</div>
