@@ -1,0 +1,18 @@
+@import '../../styles/config.scss';
+
+.title-main-container {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	padding: 2rem;
+	box-sizing: border-box;
+		
+	span {
+		background: -webkit-linear-gradient(Left, $primaryColor, $secondaryColor);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 5rem;
+		font-weight: 700;
+		width: 20rem;
+	}
+}
