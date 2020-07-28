@@ -17,7 +17,8 @@
 	.about-info {
 		padding: 6rem;
 		box-sizing: border-box;
-
+		display: flex;
+		flex-direction: column;
 		@media screen and (max-width: $tabletSize) {
 			padding: 3rem;
 		}
@@ -36,6 +37,7 @@
 			font-size: 1rem;
 			line-height: 2rem;
 			font-weight: 300;
+			margin: 0.5rem 0;
 		}
 	}
 

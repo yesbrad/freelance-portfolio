@@ -21,7 +21,9 @@ const About = () => {
 		<div ref={ref} className="about-container">
 			<animated.div style={leftSpring} className="about-info">
 				<h1>About Me.</h1>
-				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, doloremque? Quae sapiente veniam amet nam! Temporibus molestias explicabo illum cupiditate distinctio, quaerat voluptas repellat mollitia, omnis consequuntur nulla culpa ducimus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, doloremque? Quae sapiente veniam amet nam! Temporibus molestias explicabo illum cupiditate distinctio, quaerat voluptas repellat mollitia, omnis consequuntur nulla culpa ducimus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, doloremque? Quae sapiente veniam amet nam! Temporibus molestias explicabo illum cupiditate distinctio, quaerat voluptas repellat mollitia, omnis consequuntur nulla culpa ducimus?</span>
+				<span>My name is Brad and I'm a Freelance Web Developer based in Melbourne, Australia. I've been coding and designing for just about 9 years and recently spent two years in the Game and App Industry.</span>
+				<span>Supporting the businesses that are falling behind with new technology and bring them back up to where they should be, in this ever-changing world of technology, is a major driver for me.</span>
+				<span>I enjoy working with various technologies, not just websites. But also things like AR and Apps that help people in a meaningful way. I'm just finding my feet as a freelancer so if you have any questions at all or just want to chat, send it my way below.</span>
 			</animated.div>
 			<animated.div style={rightSpring} className="about-image" />
 		</div>
