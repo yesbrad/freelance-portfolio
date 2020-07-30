@@ -28,7 +28,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="home-content-hook">
-						<span>NEED A ONLINE PROFESSINAL PRESENCE?</span>
+						<h1>WEB DEVELOPER FROM MELBOURNE, AUSTRALIA</h1>
 					</div>
 				</div>
 			</div>

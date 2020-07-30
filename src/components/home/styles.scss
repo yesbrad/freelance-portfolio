@@ -8,7 +8,9 @@
 	
 	.home-content-container {
 		border-radius: $borderRadius1;
-		background: url('../../images/render.png');
+		background: url('../../images/render.jpg');
+		background-size: cover;
+		background-position: center;
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
@@ -29,9 +31,9 @@
 			display: flex;
 			align-items: flex-end;
 			justify-self: flex-end;
-			font-size: 7rem;
+			font-size: 6rem;
 			text-align: right;
-			font-weight: 700;
+			font-weight: 900;
 
 			@media screen and (max-width: $tabletSize) {
 				visibility: hidden;

@@ -1,7 +1,7 @@
 const data = [
 	{
 		title: 'Website',
-		image: require('../../images/services/Web.png'),
+		image: require('../../images/services/Web.jpg'),
 		suits: [
 			'Professionals',
 			'Bands',
@@ -17,15 +17,15 @@ const data = [
 			'SEO',
 			'Updates',
 		],
-		description: `A Custom Website specifically tailored to you or your business needs. All websites cab be designed, developed, hosted by me. I'll also be happy to work on any future changes you require on the site.
+		description: `A Custom Website specifically tailored to you or your business needs. All websites can be designed, developed, hosted by me. I'll also be happy to work on any future changes you require on the site.
 \nAll sites are designed with SEO in mind giving your site the best chance of ranking in Google, Bing, etc.
 \nAll sites a responsive and mobile friendly. Making them work on any screen size.
-\nWebsites are a critical part of any business. Its often the first place potential new customers and clients will discover you. So a modern, professional and trust worthy site will help land those customers and clients.
+\nWebsites are a critical part of any business. It's often the first place potential new customers and clients will discover you. So a modern, professional and trustworthy site will help land those customers and clients.
 		`,
 	},
 	{
 		title: 'Online Store',
-		image: require('../../images/services/Store.png'),
+		image: require('../../images/services/Store.jpg'),
 		suits: [
 			'Entrepreneurs',
 			'Merch',
@@ -50,7 +50,7 @@ const data = [
 	},
 	{
 		title: 'App',
-		image: require('../../images/services/App.png'),
+		image: require('../../images/services/Appj.jpg'),
 		suits: [
 			'Companies',
 			'Organizations',
