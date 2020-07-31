@@ -5,6 +5,35 @@
 	height: 100vh;
 	padding: $spacing1;
 	box-sizing: border-box;
+
+	.home-hamburger-menu-container {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 50%;
+		background: $white;
+		z-index: 100;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.home-menu-button {
+			margin: 0.5rem 0;
+			font-size: 2rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		button {
+			width: 5rem;
+			height: 5rem;
+			margin-bottom: 2rem;
+		}
+	}
 	
 	.home-content-container {
 		border-radius: $borderRadius1;
@@ -37,6 +66,7 @@
 
 			@media screen and (max-width: $tabletSize) {
 				visibility: hidden;
+				display: none;
 			}
 		}
 
@@ -59,15 +89,26 @@
 			justify-content: flex-end;
 			align-items: flex-start;
 			
-			@media screen and (max-width: $tabletSize) {
-				visibility: hidden;
+			.home-content-hamburger-button {
+				width: 5rem;
+				height: 5rem;
+				color: white;
+				
+				@media screen and (min-width: $tabletSize) {
+					display: none;
+				}
 			}
-
+			
 			.home-content-nav-container {
 				width: 70%;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				
+				@media screen and (max-width: $tabletSize) {
+					display: none;
+					visibility: hidden;
+				}
 				
 				.home-content-nav-button {
 					color: white;

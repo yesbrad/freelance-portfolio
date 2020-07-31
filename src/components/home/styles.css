@@ -1,0 +1,186 @@
+.home-container {
+  width: 99vw;
+  height: 100vh;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-container .home-hamburger-menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: white;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-container .home-hamburger-menu-container .home-menu-button {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.home-container .home-hamburger-menu-container .home-menu-button:hover {
+  cursor: pointer;
+}
+
+.home-container .home-hamburger-menu-container button {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-container .home-content-container {
+  border-radius: 2rem;
+  background: url("../../images/render.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-container .home-content-gradient {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#00000000));
+  background: linear-gradient(#000, #00000000);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  color: white;
+  padding: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-container .home-content-gradient .home-content-hook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  justify-self: flex-end;
+  font-size: 6rem;
+  text-align: right;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container .home-content-gradient .home-content-hook {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.home-container .home-content-gradient .home-content-action-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.home-container .home-content-gradient .home-content-action-buttons .home-content-button {
+  width: 10rem;
+  margin: 0 1rem 0 0;
+}
+
+.home-container .home-content-gradient .home-content-action-buttons #home-content-removed {
+  visibility: hidden;
+}
+
+.home-container .home-content-gradient nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.home-container .home-content-gradient nav .home-content-hamburger-button {
+  width: 5rem;
+  height: 5rem;
+  color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  .home-container .home-content-gradient nav .home-content-hamburger-button {
+    display: none;
+  }
+}
+
+.home-container .home-content-gradient nav .home-content-nav-container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container .home-content-gradient nav .home-content-nav-container {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.home-container .home-content-gradient nav .home-content-nav-container .home-content-nav-button {
+  color: white;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.home-container .home-content-gradient nav .home-content-nav-container .home-content-nav-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.home-container .home-content-gradient nav .home-content-nav-container .home-content-nav-action {
+  width: 10rem;
+}
+
+.home-container .home-content-gradient .home-content-header {
+  font-style: italic;
+}
+
+.home-container .home-content-gradient .home-content-header h2 {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.home-container .home-content-gradient .home-content-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+/*# sourceMappingURL=styles.css.map */

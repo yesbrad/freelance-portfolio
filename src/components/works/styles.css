@@ -1,0 +1,143 @@
+.works-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.works-container .works-card-container {
+  position: absolute;
+  padding: 2rem;
+}
+
+.works-container .works-card-container .works-card-content {
+  border-radius: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background: #F6F6F6;
+}
+
+@media screen and (max-width: 1000px) {
+  .works-container .works-card-container .works-card-content {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.works-container .works-card-container .works-card-content .works-info {
+  padding: 7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .works-container .works-card-container .works-card-content .works-info {
+    padding: 2rem;
+  }
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .works-container .works-card-container .works-card-content .works-info .works-info-content {
+    padding: 1rem 0rem;
+  }
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: -webkit-linear-gradient(Left, #FF00F7, #FF0057);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content span {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content .works-info-about {
+  margin-bottom: 2rem;
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content .works-info-test {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #585858;
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content .works-pagnation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content .works-pagnation button {
+  min-width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: #c7c7c7;
+  margin: 0 0.5rem;
+}
+
+.works-container .works-card-container .works-card-content .works-info .works-info-content .works-pagnation #works-pagnation-dot {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF00F7), to(#FF0057));
+  background: linear-gradient(#FF00F7, #FF0057);
+}
+
+.works-container .works-card-container .works-card-content .works-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .works-container .works-card-container .works-card-content .works-image {
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.works-container .works-card-container .works-card-content .works-image div {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1525913040040-dc99b1be1c86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+/*# sourceMappingURL=styles.css.map */

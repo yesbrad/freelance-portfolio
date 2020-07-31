@@ -1,0 +1,33 @@
+.button-generic-container {
+  background: -webkit-gradient(linear, right top, left top, from(#FF00F7), to(#FF0057));
+  background: linear-gradient(to Left, #FF00F7, #FF0057);
+  height: 3rem;
+  width: 100%;
+  border-radius: 3rem;
+  color: white;
+  -webkit-box-shadow: 0 0.5rem 3rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 3rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.95rem;
+}
+
+.button-generic-container:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

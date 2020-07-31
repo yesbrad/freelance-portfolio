@@ -1,0 +1,19 @@
+.title-main-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title-main-container span {
+  background: -webkit-linear-gradient(Left, #FF00F7, #FF0057);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: 700;
+  width: 20rem;
+}
+/*# sourceMappingURL=styles.css.map */
