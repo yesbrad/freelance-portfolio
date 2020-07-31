@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import Button from '../button';
+import { Link } from 'react-scroll';
 
 const Home = () => {
 	return (
@@ -13,18 +14,18 @@ const Home = () => {
 					</div>
 					<nav>
 						<div className="home-content-nav-container">
-							<button>SERVICES</button>
-							<button>ABOUT</button>
-							<button>PROJECTS</button>
-							<div className="home-content-nav-action"><Button title="Get a Quote"/></div>
+							<Link to="services" className="home-content-nav-button" smooth>SERVICES</Link>
+							<Link to="works" className="home-content-nav-button" smooth>WORKS</Link>
+							<Link to="about" className="home-content-nav-button" smooth>ABOUT</Link>
+							<div className="home-content-nav-action"><Button isNav to="contact" title="Get a Quote"/></div>
 						</div>
 					</nav>
 					<div className="home-content-action-buttons">
 						<div className="home-content-button">
-							<Button title="Get a Quote" isNav/>
+							<Button title="Get a Quote" isNav to="contact"/>
 						</div>
 						<div className="home-content-button" id="home-content-removed">
-							<Button title="Services" />
+							<Button isNav to="contact" title="Services" />
 						</div>
 					</div>
 					<div className="home-content-hook">

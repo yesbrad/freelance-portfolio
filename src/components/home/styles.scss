@@ -64,14 +64,19 @@
 			}
 
 			.home-content-nav-container {
-				// @include DBorder;
 				width: 70%;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				
-				button {
+				.home-content-nav-button {
 					color: white;
+					transition: all 100ms ease-in-out;
+
+					&:hover {
+						transform: scale(1.1);
+						cursor: pointer;
+					}
 				}
 				
 				.home-content-nav-action {

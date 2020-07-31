@@ -6,18 +6,27 @@ import Contact from './components/contact';
 import About from './components/about';
 import Works from './components/works';
 import Footer from './components/footer';
+import { Element } from 'react-scroll';
 
 const App = () => {
   return (
 	<div>
-		  <Home />
-		  <Title title="Services" />
-		  <Services />
-		  <Title title="Works" />
-		  <Works />
-		  <About />
-		  <Contact />
-		  <Footer />
+		<Home />
+		<Element name="services">
+			<Title title="Services" />
+			<Services />
+		</Element>
+		<Element name="works">
+			<Title title="Works" />
+			<Works />
+		</Element>
+		<Element name="about">
+			<About />
+		</Element>
+		<Element name="contact">
+			<Contact />
+		</Element>
+		<Footer />
     </div>
   );
 }

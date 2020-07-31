@@ -13,8 +13,9 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 0.95rem;
-}
 
-.button-generic-container:hover {
-	transform: scale(1.1);
+	&:hover {
+		transform: scale(1.1);
+		cursor: pointer;
+	}
 }
