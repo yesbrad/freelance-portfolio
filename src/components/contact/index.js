@@ -23,7 +23,7 @@ const Contact = () => {
 	})
 
 	const onSendEmail = async () => {
-		sgMail.setApiKey('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');
+		sgMail.setApiKey(process.env.REACT_APP_SGKEY);
 
 		if (sending)
 			return;
